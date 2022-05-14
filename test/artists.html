@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+        
+        #section1 {
+          height: 600px;
+          background-color: pink;
+        }
+        
+        #section2 {
+          height: 600px;
+          background-color: yellow;
+        }
+        </style>
+</head>
+
+
+
+<body>
+    <a href="#52">Last Artist</a>
+    
+    {{ range .}}
+   
+        <a id = "demo"> <a href="demo"></a>test</a>
+            <input type="submit" name="mysubmit" value="Submit"/>
+        </form>
+        <div> <p id="{{.ID}}">{{.Name}}</p>{{.CreationDate}}</div>
+        
+        <div></div>
+        <br>
+        <div> <p id="left"><img src="{{.Image}}"></p></div> 
+        <br>
+        <p id="left">{{.Members}}</p>
+        <br>
+        First Album: {{.FirstAlbum}}
+        
+        <br>
+      <br><br><br><br><br><br><br><br><br><br>  
+        
+      </form><br><br><br><br><br><br><br><br><br><br><br><form method="POST" action="/">     
+        
+        <p id="right"> <input type="submit" value="Next Artist" /></p><br><br><br><br><br>
+    {{ end }}
+    <a href="#1">First Artist</a>
+</body>
+
+</html>
